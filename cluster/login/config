@@ -1,0 +1,13 @@
+thread = 8
+logger = nil
+harbor = 0
+start = "loginMain"
+bootstrap = "snlua bootstrap"
+cpath = cpath
+lualoader = lualoader
+snax = snax
+luaservice = luaservice .. "./cluster/login/?.lua;"
+lua_path = lua_path
+lua_cpath = lua_cpath
+cluster = cluster
+CLUATER_NODE_NAME = "login"
