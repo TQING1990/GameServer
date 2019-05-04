@@ -88,7 +88,7 @@ skynet.start(function ()
         redis.connect {
         host = "127.0.0.1",
         port = 6379,
-        auth = "passward",
+        auth = "1",
         db = 9
     }
 
