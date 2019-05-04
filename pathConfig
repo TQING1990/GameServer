@@ -20,7 +20,8 @@ skynet_root .. "luaclib/?.so;" ..
 lua_path =
 skynet_root .. "lualib/?.lua;" ..
 "./?.lua;" ..
-"./lib/?.lua;"
+"./lib/?.lua;" ..
+"./system/?.lua;"
 
 -- 配置项
 snax = skynet_root .. "service/snaxservice/?.lua;"
