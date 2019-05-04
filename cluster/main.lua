@@ -5,7 +5,6 @@
 
 local skynet = require("skynet")
 local envConfig = require("envConfig")
-local log = require("log")
 local cluster = require("skynet.cluster")
 local serviceAddress = require("serviceAddress")
 
