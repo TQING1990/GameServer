@@ -12,9 +12,9 @@ local handler = {}
 function handler.init( node )
     -- local nodeAreaConfig = skynet.call(serviceAddress.configd(), "getNodeAreaConfig", node)
     local nodeAreaConfig = configCenter.getNodeAreaConfig(node)
-    local publicID = skynet.getenv("PUBLIC_IP")
+    local publicIP = skynet.getenv("PUBLIC_IP")
     for areaID, v in pairs(nodeAreaConfig) do
-        local address = publicID
+        local address = publicIP
         local port = v.gatePort
         local gate = skynet.newservice("gated", node, areaID, address, port)
         local gateConfig = {
