@@ -4,9 +4,10 @@
 --
 
 local skynet = require("skynet")
-local dump = require("skynet.datasheet.dump")
+local dump = require("dump")
 
 log = {}
+local log = log
 
 function log.debug( ... )
     skynet.error(...)
@@ -24,8 +25,8 @@ function log.error( ... )
     skynet.error(...)
 end
 
-function log.dump( t )
-    log.debug(dump.dump(t))
+function log.dump( root, des )
+    log.debug(dump(root, des))
 end
 
 return log
